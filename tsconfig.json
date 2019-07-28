@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "incremental": true,
+    "target": "es2016",
+    "module": "commonjs",
+    "allowJs": true,
+    "checkJs": false,
+    "jsx": "react",
+    "outDir": "./dist",
+    "strict": true,
+    "alwaysStrict": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true
+  }
+}
