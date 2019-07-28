@@ -1,19 +1,17 @@
 import { Renderer, View, Text, Button, Window } from "@nodegui/react-desktop";
-import React, { useState, useMemo } from "react";
-import { QPushButtonEvents } from "@nodegui/nodegui";
+import React, { useState } from "react";
 
 const App = () => {
   const [time, setTime] = useState(`${new Date()}`);
-  const buttonEventHandlers = useMemo(
-    () => ({
-      [QPushButtonEvents.clicked]: () => setTime(`${new Date()}`)
-    }),
-    []
-  );
   return (
-    <Window styleSheet={styleSheet}>
+    <Window minSize={{ width: 500, height: 200 }} styleSheet={styleSheet}>
       <View id="container">
-        <Button text="Update Time" on={buttonEventHandlers} />
+        <Button
+          text="Update Time"
+          on={{
+            clicked: () => setTime(`${new Date()}`)
+          }}
+        />
         <Text id="result">{time}</Text>
       </View>
     </Window>
