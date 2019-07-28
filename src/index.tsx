@@ -2,17 +2,18 @@ import { Renderer, View, Text, Button, Window } from "@nodegui/react-desktop";
 import React, { useState } from "react";
 
 const App = () => {
-  const [time, setTime] = useState(`${new Date()}`);
+  const [time, setTime] = useState(new Date());
   return (
     <Window minSize={{ width: 500, height: 200 }} styleSheet={styleSheet}>
       <View id="container">
         <Button
           text="Update Time"
           on={{
-            clicked: () => setTime(`${new Date()}`)
+            clicked: () => setTime(new Date())
           }}
         />
-        <Text id="result">{time}</Text>
+        <Text id="result">{`${time}`}</Text>
+        <Text id="result">{`Time in epoc: ${time.getTime()}`}</Text>
       </View>
     </Window>
   );

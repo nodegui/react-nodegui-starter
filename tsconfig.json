@@ -7,6 +7,7 @@
     "checkJs": false,
     "jsx": "react",
     "outDir": "./dist",
+    "sourceMap": true,
     "strict": true,
     "alwaysStrict": true,
     "moduleResolution": "node",
