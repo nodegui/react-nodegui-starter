@@ -1,12 +1,12 @@
 {
-  "name": "react-desktop-test",
+  "name": "react-desktop-starter",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Atul R <atulanand94@gmail.com>",
   "license": "MIT",
   "private": true,
   "scripts": {
-    "dev": "tsc && qode ./dist/index.js"
+    "start": "tsc && qode ./dist/index.js"
   },
   "dependencies": {
     "@nodegui/nodegui": "^0.0.5-alpha",

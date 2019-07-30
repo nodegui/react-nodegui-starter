@@ -1,10 +1,5 @@
-# Dependencies:
+# React Desktop Starter
 
-- @nodegui/nodegui
-- @nodegui/react-desktop
-- react
+To run:
 
-# DevDependencies:
-
-- @nodegui/qode
-- typescript
+`npm run start`
