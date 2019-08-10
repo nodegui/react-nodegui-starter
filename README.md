@@ -1,5 +1,11 @@
 # React Desktop Starter
 
+Use yarn for now
+
+Npm seems to be broken
+
 To run:
 
-`npm run start`
+`yarn install`
+
+`yarn start`
