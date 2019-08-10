@@ -21,20 +21,20 @@ const App = () => {
 
 const styleSheet = `
   #container {
-    qproperty-flex: 1;
-    qproperty-flexDirection: column;
-    qproperty-minHeight: '100%';
-    qproperty-alignItems: 'center';
-    qproperty-justifyContent: 'center';
+    flex: 1;
+    flex-direction: column;
+    min-height: '100%';
+    align-items: 'center';
+    justify-content: 'center';
   }
   #opBtn {
     font-size: 20px;
   }
   #result {
     font-size: 12px;
-    qproperty-flex: 1;
+    flex: 1;
     color: cyan;
   }
 `;
 
-Renderer.render(<App />, () => {});
+Renderer.render(<App />);
