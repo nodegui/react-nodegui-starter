@@ -9,9 +9,9 @@
     "start": "tsc && qode ./dist/index.js"
   },
   "dependencies": {
-    "@nodegui/nodegui": "^0.0.12",
-    "@nodegui/react-desktop": "0.0.6",
-    "react": "^16.8.6"
+    "@nodegui/nodegui": "0.0.13",
+    "@nodegui/react-desktop": "0.0.7",
+    "react": "^16.9.0"
   },
   "devDependencies": {
     "@types/node": "^12.6.8",

@@ -1,23 +1,43 @@
-import { Renderer, View, Text, Button, Window } from "@nodegui/react-desktop";
+import {
+  Renderer,
+  View,
+  Text,
+  Button,
+  Window,
+  Image,
+  useEventHandler
+} from "@nodegui/react-desktop";
 import React, { useState } from "react";
+import path from "path";
+import { AspectRatioMode } from "@nodegui/nodegui";
 
+const imageUrl = path.resolve(__dirname, "../assets/sample.jpg");
+const fixedSize = { width: 500, height: 500 };
 const App = () => {
   const [time, setTime] = useState(new Date());
+  const btnHandler = useEventHandler(
+    { clicked: () => setTime(new Date()) },
+    []
+  );
   return (
-    <Window minSize={{ width: 500, height: 200 }} styleSheet={styleSheet}>
+    <Window minSize={fixedSize} maxSize={fixedSize} styleSheet={styleSheet}>
       <View id="container">
-        <Button
-          text="Update Time"
-          on={{
-            clicked: () => setTime(new Date())
-          }}
-        />
+        <Button text="Update Time" on={btnHandler} />
         <Text id="result">{`${time}`}</Text>
         <Text id="result">{`Time in epoc: ${time.getTime()}`}</Text>
+        <Image
+          style={imageStyle}
+          src={imageUrl}
+          aspectRatioMode={AspectRatioMode.KeepAspectRatio}
+        />
       </View>
     </Window>
   );
 };
+
+const imageStyle = `
+  height: "70%";
+`;
 
 const styleSheet = `
   #container {
