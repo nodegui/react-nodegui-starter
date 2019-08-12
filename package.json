@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@nodegui/nodegui": "^0.1.1",
-    "@nodegui/react-desktop": "^0.1.1",
+    "@nodegui/react-desktop": "^0.1.2",
     "react": "^16.9.0"
   },
   "devDependencies": {
