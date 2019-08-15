@@ -1,5 +1,5 @@
 {
-  "name": "react-desktop-starter",
+  "name": "react-nodegui-starter",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Atul R <atulanand94@gmail.com>",
@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@nodegui/nodegui": "^0.1.1",
-    "@nodegui/react-desktop": "^0.1.2",
+    "@nodegui/react-nodegui": "^0.1.1",
     "react": "^16.9.0"
   },
   "devDependencies": {

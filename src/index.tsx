@@ -6,7 +6,7 @@ import {
   Window,
   Image,
   useEventHandler
-} from "@nodegui/react-desktop";
+} from "@nodegui/react-nodegui";
 import React, { useState } from "react";
 import path from "path";
 import { AspectRatioMode } from "@nodegui/nodegui";
