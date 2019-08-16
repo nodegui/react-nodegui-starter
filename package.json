@@ -9,7 +9,7 @@
     "start": "tsc && qode ./dist/index.js"
   },
   "dependencies": {
-    "@nodegui/nodegui": "^0.1.1",
+    "@nodegui/nodegui": "^0.1.2",
     "@nodegui/react-nodegui": "^0.1.1",
     "react": "^16.9.0"
   },

@@ -46,6 +46,7 @@ const styleSheet = `
     min-height: '100%';
     align-items: 'center';
     justify-content: 'center';
+    background-color: black;
   }
   #opBtn {
     font-size: 20px;
