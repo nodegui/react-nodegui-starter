@@ -6,6 +6,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
+    "start:watch": "nodemon -e js,ts,tsx --ignore dist/ --ignore node_modules/ --exec yarn start",
     "start": "tsc && qode ./dist/index.js"
   },
   "dependencies": {
@@ -14,6 +15,7 @@
     "react": "^16.9.0"
   },
   "devDependencies": {
+    "nodemon": "latest",
     "@types/node": "^12.6.8",
     "@types/react": "^16.8.23",
     "typescript": "^3.5.3"
