@@ -17,11 +17,8 @@ npm install
 # Run the app
 npm start
 ```
-node-gyp (NodeJs's build system) is not compatible with Visual Studio 2019 yet. So you will need to install Visual Studio 2017 to work with native modules in NodeJs and NodeJS build toolchain doesnt support it aswell.
 
-Install Visual Studio Community 2017. Download the Visual studio Installer and install Visual Studio Community 2017. Make sure to choose "Desktop development with C++ " workload and install it.
-
-## Resources for Learning NodeGUI/React NodeGUI
+## Installation & Resources for Learning NodeGUI/React NodeGUI
 
 - [nodegui.github.io/nodegui](https://nodegui.github.io/nodegui) - all of NodeGui and React NodeGUI's documentation
 
