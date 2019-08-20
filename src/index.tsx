@@ -22,7 +22,7 @@ const App = () => {
   return (
     <Window minSize={fixedSize} maxSize={fixedSize} styleSheet={styleSheet}>
       <View id="container">
-        <Button text="Update Time" on={btnHandler} />
+        <Button id="opBtn" text="Update Time" on={btnHandler} />
         <Text id="result">{`${time}`}</Text>
         <Text id="result">{`Time in epoc: ${time.getTime()}`}</Text>
         <Image
