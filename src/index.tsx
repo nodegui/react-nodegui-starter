@@ -7,10 +7,12 @@ import {
   Image,
   useEventHandler
 } from "@nodegui/react-nodegui";
+import path from "path";
 import React, { useState } from "react";
 import { AspectRatioMode, QPushButtonEvents } from "@nodegui/nodegui";
 
 import imageUrl from "../assets/sample.jpg";
+const distImgUrl = path.resolve(__dirname, imageUrl);
 
 const fixedSize = { width: 500, height: 500 };
 const App = () => {
@@ -27,7 +29,7 @@ const App = () => {
         <Text id="result">{`Time in epoc: ${time.getTime()}`}</Text>
         <Image
           style={imageStyle}
-          src={imageUrl}
+          src={distImgUrl}
           aspectRatioMode={AspectRatioMode.KeepAspectRatio}
         />
       </View>

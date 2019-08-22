@@ -8,6 +8,9 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     filename: "index.js"
   },
+  node: {
+    __dirname: false
+  },
   module: {
     rules: [
       {
