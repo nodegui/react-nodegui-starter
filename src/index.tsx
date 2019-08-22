@@ -8,18 +8,17 @@ import {
   useEventHandler
 } from "@nodegui/react-nodegui";
 import React, { useState } from "react";
-import { AspectRatioMode } from "@nodegui/nodegui";
-//@ts-ignore
+import { AspectRatioMode, QPushButtonEvents } from "@nodegui/nodegui";
+
 import imageUrl from "../assets/sample.jpg";
 
 const fixedSize = { width: 500, height: 500 };
 const App = () => {
   const [time, setTime] = useState(new Date());
   const btnHandler = useEventHandler(
-    { clicked: () => setTime(new Date()) },
+    { [QPushButtonEvents.clicked]: () => setTime(new Date()) },
     []
   );
-  console.log(imageUrl);
   return (
     <Window minSize={fixedSize} maxSize={fixedSize} styleSheet={styleSheet}>
       <View id="container">
