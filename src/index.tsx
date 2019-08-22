@@ -8,10 +8,10 @@ import {
   useEventHandler
 } from "@nodegui/react-nodegui";
 import React, { useState } from "react";
-import path from "path";
 import { AspectRatioMode } from "@nodegui/nodegui";
+//@ts-ignore
+import imageUrl from "../assets/sample.jpg";
 
-const imageUrl = path.resolve(__dirname, "../assets/sample.jpg");
 const fixedSize = { width: 500, height: 500 };
 const App = () => {
   const [time, setTime] = useState(new Date());
@@ -19,6 +19,7 @@ const App = () => {
     { clicked: () => setTime(new Date()) },
     []
   );
+  console.log(imageUrl);
   return (
     <Window minSize={fixedSize} maxSize={fixedSize} styleSheet={styleSheet}>
       <View id="container">

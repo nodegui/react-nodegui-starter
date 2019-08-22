@@ -12,5 +12,6 @@
     "alwaysStrict": true,
     "moduleResolution": "node",
     "esModuleInterop": true
-  }
+  },
+  "include": ["**/*"]
 }
