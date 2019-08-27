@@ -8,7 +8,8 @@
   "scripts": {
     "build": "webpack -p",
     "start": "webpack && qode ./dist/index.js",
-    "debug": "webpack && qode --inspect ./dist/index.js"
+    "debug": "webpack && qode --inspect ./dist/index.js",
+    "start:watch": "nodemon -e js,ts,tsx --ignore dist/ --ignore node_modules/ --exec npm start"
   },
   "dependencies": {
     "@nodegui/nodegui": "^0.1.5",
