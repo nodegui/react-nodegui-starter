@@ -1,0 +1,16 @@
+#container {
+  flex: 1;
+  flex-direction: column;
+  min-height: '100%';
+  align-items: 'center';
+  justify-content: 'center';
+  background-color: black;
+}
+#opBtn {
+  font-size: 20px;
+}
+#result {
+  font-size: 12px;
+  flex: 1;
+  color: cyan;
+}

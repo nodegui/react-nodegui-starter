@@ -11,6 +11,7 @@ import path from "path";
 import React, { useState } from "react";
 import { AspectRatioMode, QPushButtonEvents } from "@nodegui/nodegui";
 
+import styleSheet from "./index.css";
 import imageUrl from "../assets/sample.jpg";
 const distImgUrl = path.resolve(__dirname, imageUrl);
 
@@ -39,25 +40,6 @@ const App = () => {
 
 const imageStyle = `
   height: "70%";
-`;
-
-const styleSheet = `
-  #container {
-    flex: 1;
-    flex-direction: column;
-    min-height: '100%';
-    align-items: 'center';
-    justify-content: 'center';
-    background-color: black;
-  }
-  #opBtn {
-    font-size: 20px;
-  }
-  #result {
-    font-size: 12px;
-    flex: 1;
-    color: cyan;
-  }
 `;
 
 Renderer.render(<App />);
