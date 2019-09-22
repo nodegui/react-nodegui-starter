@@ -18,7 +18,7 @@ npm install
 npm start
 ```
 
-## Resources for Learning NodeGUI/React NodeGUI
+## Installation & Resources for Learning NodeGUI/React NodeGUI
 
 - [nodegui.github.io/nodegui](https://nodegui.github.io/nodegui) - all of NodeGui and React NodeGUI's documentation
 
