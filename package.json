@@ -12,7 +12,7 @@
     "start:watch": "nodemon -e js,ts,tsx --ignore dist/ --ignore node_modules/ --exec npm start"
   },
   "dependencies": {
-    "@nodegui/nodegui": "^0.2.1",
+    "@nodegui/nodegui": "^0.3.1",
     "@nodegui/react-nodegui": "^0.1.9",
     "react": "^16.9.0"
   },
