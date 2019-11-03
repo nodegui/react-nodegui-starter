@@ -1,17 +1,13 @@
 {
   "compilerOptions": {
-    "incremental": true,
     "target": "es2016",
     "module": "commonjs",
-    "allowJs": true,
-    "checkJs": false,
     "jsx": "react",
-    "outDir": "./dist",
-    "sourceMap": true,
     "strict": true,
     "alwaysStrict": true,
     "moduleResolution": "node",
     "esModuleInterop": true
   },
-  "include": ["**/*"]
+  "include": ["**/*"],
+  "exclude": ["./node_modules/**/*"]
 }

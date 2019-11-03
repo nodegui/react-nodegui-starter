@@ -7,22 +7,26 @@
   "private": true,
   "scripts": {
     "build": "webpack -p",
-    "start": "webpack && qode ./dist/index.js",
-    "debug": "webpack && qode --inspect ./dist/index.js",
-    "start:watch": "nodemon -e js,ts,tsx --ignore dist/ --ignore node_modules/ --exec npm start"
+    "dev": "webpack --mode=development",
+    "start": "qode --inspect ./dist/index.js"
   },
   "dependencies": {
-    "@nodegui/nodegui": "^0.2.1",
+    "@nodegui/nodegui": "^0.3.1",
     "@nodegui/react-nodegui": "^0.1.9",
     "react": "^16.9.0"
   },
   "devDependencies": {
-    "nodemon": "latest",
-    "@types/react": "^16.8.23",
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-react": "^7.6.3",
+    "@babel/preset-typescript": "^7.6.0",
     "@types/node": "^12.6.8",
+    "@types/react": "^16.8.23",
+    "@types/webpack-env": "^1.14.1",
+    "babel-loader": "^8.0.6",
     "file-loader": "^4.2.0",
     "node-loader": "^0.6.0",
-    "ts-loader": "^6.0.4",
+    "fork-ts-checker-webpack-plugin": "^3.0.1",
     "typescript": "^3.5.3",
     "webpack": "^4.39.2",
     "webpack-cli": "^3.3.6"
