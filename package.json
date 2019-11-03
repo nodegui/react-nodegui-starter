@@ -29,7 +29,7 @@
     "file-loader": "^4.2.0",
     "fork-ts-checker-webpack-plugin": "^3.0.1",
     "node-loader": "^0.6.0",
-    "typescript": "^3.5.3",
+    "typescript": "^3.6.4",
     "webpack": "^4.39.2",
     "webpack-cli": "^3.3.6"
   }
