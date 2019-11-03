@@ -2,6 +2,8 @@
 
 **Clone and run for a quick way to see React NodeGui in action.**
 
+<img alt="logo" src="https://github.com/nodegui/react-nodegui-starters/raw/master/assets/demo.png" height="300" />
+
 ## To Use
 
 To clone and run this repository you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:

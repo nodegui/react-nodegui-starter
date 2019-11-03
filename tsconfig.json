@@ -8,6 +8,5 @@
     "moduleResolution": "node",
     "esModuleInterop": true
   },
-  "include": ["**/*"],
-  "exclude": ["./node_modules/**/*"]
+  "include": ["**/*"]
 }
