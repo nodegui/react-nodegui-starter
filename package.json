@@ -13,6 +13,8 @@
   "dependencies": {
     "@nodegui/nodegui": "^0.3.1",
     "@nodegui/react-nodegui": "^0.1.9",
+    "chrome-launcher": "^0.12.0",
+    "open": "^7.0.0",
     "react": "^16.9.0"
   },
   "devDependencies": {
