@@ -1,5 +1,6 @@
 import { Text, View } from "@nodegui/react-nodegui";
 import React from "react";
+const dogImg = require("./dog");
 
 export function StepOne() {
   return (
@@ -10,11 +11,11 @@ export function StepOne() {
       </Text>
       <Text>
         {`
-          <p style="color: #6200ee;"> 
-             <img src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAUA
-              AAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO
-              9TXL0Y4OHwAAAABJRU5ErkJggg==" alt="Red dot" />
-              You can even use <i><strong>Rich Html</strong></i> text like this if you want 😎.
+          <p style="color: rgb(255,72,38);"> 
+            <center>
+              <img src="${dogImg}" alt="doggy" />  
+            </center>
+            <center>You can even use <i><strong>Rich Html</strong></i> text like this if you want 😎.</center>
           </p>
           <hr />
         `}

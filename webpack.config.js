@@ -1,6 +1,7 @@
 const path = require("path");
 const webpack = require("webpack");
 const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = (env, argv) => {
   const config = {
@@ -12,7 +13,8 @@ module.exports = (env, argv) => {
       filename: "index.js"
     },
     node: {
-      __dirname: false
+      __dirname: false,
+      __filename: false
     },
     module: {
       rules: [
@@ -39,6 +41,7 @@ module.exports = (env, argv) => {
       extensions: [".tsx", ".ts", ".js", ".jsx", ".json"]
     }
   };
+
   if (argv.mode === "development") {
     config.mode = "development";
     config.plugins.push(new webpack.HotModuleReplacementPlugin());
@@ -46,6 +49,10 @@ module.exports = (env, argv) => {
     config.devtool = "source-map";
     config.watch = true;
     config.entry.unshift("webpack/hot/poll?100");
+  }
+
+  if (argv.p) {
+    config.plugins.push(new CleanWebpackPlugin());
   }
   return config;
 };
