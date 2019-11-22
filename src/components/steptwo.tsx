@@ -11,20 +11,20 @@ const buttonEventHandler = {
 
 export function StepTwo() {
   return (
-    <View>
+    <View style={containerStyle}>
       <Text style={textStyle} wordWrap={true}>
         {`
           <ol>
             <li>
-                Open chrome and navigate to <code>chrome://inspect</code>. You should see a target below with your app.
+                Open chrome and navigate to chrome://inspect. You should see a target below with your app.
             </li>
             <br/>
               <li>
-                  Next click on  "<code>Open dedicated DevTools for Node</code>"
+                  Next click on  "Open dedicated DevTools for Node"
               </li>
               <br/>
             <li>
-                On the dedicated devtools. Click on <code> Source > Node > "Your node process" </code>
+                On the dedicated devtools. Click on Source > Node > "Your node process"
             </li>
           </ol>
         `}
@@ -37,6 +37,11 @@ export function StepTwo() {
     </View>
   );
 }
+
+const containerStyle = `
+  flex: 1;
+  justify-content: 'space-around';
+`;
 
 const textStyle = `
   padding-right: 20px;
