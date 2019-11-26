@@ -11,8 +11,8 @@
     "start": "qode --inspect ./dist/index.js"
   },
   "dependencies": {
-    "@nodegui/nodegui": "^0.6.5",
-    "@nodegui/react-nodegui": "^0.2.5",
+    "@nodegui/nodegui": "^0.6.7",
+    "@nodegui/react-nodegui": "^0.2.6",
     "open": "^7.0.0",
     "react": "^16.12.0"
   },

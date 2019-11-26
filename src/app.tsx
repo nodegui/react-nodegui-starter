@@ -38,6 +38,7 @@ const styleSheet = `
     font-size: 24px;
     padding-top: 20px;
     qproperty-alignment: 'AlignHCenter';
+    font-family: 'sans-serif';
   }
 
   #step-1, #step-2 {
