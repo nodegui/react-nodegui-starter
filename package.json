@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@nodegui/nodegui": "^0.7.0",
-    "@nodegui/react-nodegui": "^0.3.0",
+    "@nodegui/react-nodegui": "^0.3.1",
     "open": "^7.0.0",
     "react": "^16.12.0"
   },
