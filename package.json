@@ -11,25 +11,25 @@
     "start": "qode --inspect ./dist/index.js"
   },
   "dependencies": {
-    "@nodegui/nodegui": "^0.8.0",
-    "@nodegui/react-nodegui": "^0.3.1",
+    "@nodegui/nodegui": "^0.9.0",
+    "@nodegui/react-nodegui": "^0.3.2",
     "open": "^7.0.0",
     "react": "^16.12.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.7.4",
-    "@babel/preset-env": "^7.7.4",
+    "@babel/core": "^7.7.5",
+    "@babel/preset-env": "^7.7.6",
     "@babel/preset-react": "^7.7.4",
     "@babel/preset-typescript": "^7.7.4",
     "@types/node": "^12.12.14",
-    "@types/react": "^16.9.13",
+    "@types/react": "^16.9.15",
     "@types/webpack-env": "^1.14.1",
     "babel-loader": "^8.0.6",
     "clean-webpack-plugin": "^3.0.0",
     "file-loader": "^5.0.2",
     "fork-ts-checker-webpack-plugin": "^3.1.1",
     "node-loader": "^0.6.0",
-    "typescript": "^3.7.2",
+    "typescript": "^3.7.3",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10"
   }
