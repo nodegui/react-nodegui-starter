@@ -1,15 +1,15 @@
-import { Text, View, Button } from "@nodegui/react-nodegui";
-import { QPushButtonEvents } from "@nodegui/nodegui";
+import { Text, View, Button, useEventHandler } from "@nodegui/react-nodegui";
+import { QPushButtonSignals } from "@nodegui/nodegui";
 import React from "react";
 import open from "open";
 
-const buttonEventHandler = {
-  [QPushButtonEvents.clicked]: () => {
-    open("https://react.nodegui.org").catch(console.log);
-  }
-};
-
 export function StepTwo() {
+  const btnHandler = useEventHandler<QPushButtonSignals>(
+    {
+      clicked: () => open("https://react.nodegui.org").catch(console.log)
+    },
+    []
+  );
   return (
     <View style={containerStyle}>
       <Text style={textStyle} wordWrap={true}>
@@ -31,7 +31,7 @@ export function StepTwo() {
       </Text>
       <Button
         style={btnStyle}
-        on={buttonEventHandler}
+        on={btnHandler}
         text={`Open React NodeGui docs`}
       ></Button>
     </View>
