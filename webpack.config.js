@@ -32,7 +32,14 @@ module.exports = (env, argv) => {
         },
         {
           test: /\.node/i,
-          use: [{ loader: "node-loader" }, { loader: "file-loader" }]
+          use: [
+            {
+              loader: "native-addon-loader",
+              options: {
+                name: "[name]-[hash].[ext]"
+              }
+            }
+          ]
         }
       ]
     },
