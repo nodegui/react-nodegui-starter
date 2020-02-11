@@ -27,8 +27,13 @@ module.exports = (env, argv) => {
           }
         },
         {
-          test: /\.(png|jpe?g|gif|svg|bmp)$/i,
-          use: [{ loader: "file-loader" }]
+          test: /\.(png|jpe?g|gif|svg|bmp|otf)$/i,
+          use: [{
+            loader: "file-loader",
+            options: {
+              publicPath: "dist"
+            }
+          }]
         },
         {
           test: /\.node/i,
