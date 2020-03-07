@@ -11,26 +11,26 @@
     "start": "qode --inspect ./dist/index.js"
   },
   "dependencies": {
-    "@nodegui/nodegui": "^0.13.1",
-    "@nodegui/react-nodegui": "^0.4.0",
-    "open": "^7.0.0",
-    "react": "^16.12.0"
+    "@nodegui/nodegui": "^0.15.2",
+    "@nodegui/react-nodegui": "^0.5.0",
+    "open": "^7.0.2",
+    "react": "^16.13.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.7.7",
-    "@babel/preset-env": "^7.7.7",
-    "@babel/preset-react": "^7.7.4",
-    "@babel/preset-typescript": "^7.7.7",
-    "@types/node": "^12.12.22",
-    "@types/react": "^16.9.17",
-    "@types/webpack-env": "^1.14.1",
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "@babel/preset-react": "^7.8.3",
+    "@babel/preset-typescript": "^7.8.3",
+    "@types/node": "^12.12.29",
+    "@types/react": "^16.9.23",
+    "@types/webpack-env": "^1.15.1",
     "babel-loader": "^8.0.6",
     "clean-webpack-plugin": "^3.0.0",
-    "file-loader": "^5.0.2",
+    "file-loader": "^5.1.0",
     "fork-ts-checker-webpack-plugin": "^3.1.1",
     "native-addon-loader": "^2.0.1",
-    "typescript": "^3.7.4",
-    "webpack": "^4.41.4",
-    "webpack-cli": "^3.3.10"
+    "typescript": "^3.8.3",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11"
   }
 }
