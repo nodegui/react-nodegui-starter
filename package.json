@@ -19,7 +19,7 @@
   "devDependencies": {
     "@babel/core": "^7.10.2",
     "@babel/preset-env": "^7.10.2",
-    "@babel/preset-react": "^7.10.1",
+    "@babel/preset-react": "^7.10.4",
     "@babel/preset-typescript": "^7.10.1",
     "@nodegui/packer": "^1.4.1",
     "@types/node": "^14.0.12",
