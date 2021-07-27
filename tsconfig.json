@@ -6,7 +6,8 @@
     "strict": true,
     "alwaysStrict": true,
     "moduleResolution": "node",
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "types": ["webpack-env"]
   },
   "include": ["**/*"]
 }
